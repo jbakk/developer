@@ -1,10 +1,20 @@
 import React from 'react'
+// import Container from '../container/Container'
+
+import './Footer.css'
 
 const Footer = () => {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <footer className='footer'>
+      {/* <Container> */}
+        <div className='footerInner'>
+          <p>&copy; Your Business {new Date().getFullYear()}</p>
+          <p>
+            <a href='/'>Made by you</a>
+          </p>
+        </div>
+      {/* </Container> */}
+    </footer>
   )
 }
 

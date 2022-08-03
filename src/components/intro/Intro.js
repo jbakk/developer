@@ -1,11 +1,22 @@
 import React from 'react'
+// import Container from '../container/Container'
 
-const Intro = () => {
+import './Intro.css'
+
+const IntroBlock = () => {
   return (
-    <div>
-      <h1>Intro</h1>
+    <div className='introBlock'>
+      {/* <Container size='small'> */}
+      <h1 className='introBlockTitle'>
+        <span>Digital marketing</span> services for your{' '}
+        <span>online business</span>
+      </h1>
+      <a href='/' className='cta'>
+        Get in touch
+      </a>
+      {/* </Container> */}
     </div>
   )
 }
 
-export default Intro
+export default IntroBlock
